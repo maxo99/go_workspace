@@ -9,7 +9,7 @@ import (
 
 
 
-func main(){
+func http_server(){
     http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Welcome to my website!")
     })
